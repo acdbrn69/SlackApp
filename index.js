@@ -1,5 +1,3 @@
-//const OPENWEATHERMAP_API_KEY = process.env.OPENWEATHERMAP_API_KEY;
-
 
 const OPENWEATHERMAP_API_KEY = 'c9d1365328877e9e48ba62eb757569ec';
 const axios = require('axios');
@@ -7,7 +5,7 @@ const express = require('express');
 const PORT = 5555;
 const app = express();
 
-// add a task to their trello card
+
 app.get('/weather', (req, res) => {
     const city = req.query.text;
     const WEATHER_URL_ENDPOINT = `http://api.openweathermap.org/data/2.5/weather?q=${
