@@ -10,7 +10,7 @@ app.get('/weather', (req, res) => {
     const city = req.query.text;
     const WEATHER_URL_ENDPOINT = `http://api.openweathermap.org/data/2.5/weather?q=${
         city
-        }&units=metric&appid=${OPENWEATHERMAP_API_KEY}`;
+        }&units=imperial&appid=${OPENWEATHERMAP_API_KEY}`;
 
     axios
         .get(WEATHER_URL_ENDPOINT)
